@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" type="text/css" href="hobbiesstyle.css">
+    <link rel="stylesheet" type="text/css" href="mainstyle.css">
     <title>Hobbies</title>
 </head>
 
@@ -16,11 +16,16 @@
         <a href="resume.html">Resume</a>
         <a href="contact.html">Contact</a>
     </nav>
+    <p>Here's some music for your scrolling.</p>
+    <audio autoplay controls>
+    <source src="music.mp3" type="audio/mpeg"></audio>
 
     <h2>PC Building</h2>
     <p>I've always enjoyed tinkering with computer components as a child. 
         Whether it's swapping RAM or installing new hard drives, there is always something to improve and optimize. 
         Below is a list of my current PC parts.</p>
+
+
     <ul class="pc">
         <li>CPU: Ryzen 5 7600x</li>
         <li>GPU: Radeon 9070xt</li>
@@ -28,6 +33,13 @@
         <li>MOBO: MSI MAGB 650 TOMAHAWK WIFI</li>
         <li>Storage: Two 2TB NVME SSDs and a 2TB Seagate HDD</li>
     </ul>
+    <p>If you would like to build your own PC, click the button to access PCPartPicker!</p>
+            <button onclick="myFunction()">Try it</button>
+        <script>
+        function myFunction(){
+            window.open("https://pcpartpicker.com");
+            }
+        </script>
 
     <h3>Video Games</h3>
     <p>Along with building the PC, I mainly use it for playing video games with friends. 
