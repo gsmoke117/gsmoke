@@ -93,3 +93,10 @@ li {
     color: #313B72;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
 }
+video {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    border: 2px solid #B74F6F; /* reddish pink */
+    border-radius: 10px;
+}
