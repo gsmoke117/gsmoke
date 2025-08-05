@@ -1,2 +1,6 @@
-# gsmoke
-Final
+Contains:
+Resume
+Contact
+Coursework
+Hobbies
+Index
