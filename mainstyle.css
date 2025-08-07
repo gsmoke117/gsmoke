@@ -154,28 +154,38 @@ li {
 /* Contact columns */
 .contact-columns {
     display: flex;
-    justify-content: center;
-    gap: 40px;
+    justify-content: center; /* Center columns horizontally */
+    align-items: center;     /* Align columns vertically */
+    gap: 40px;               /* Space between columns */
     margin: 40px auto 0 auto;
     max-width: 1000px;
+    flex-wrap: wrap;         /* Allow items to wrap on smaller screens */
 }
 
 .contact-col {
     flex: 1 1 0;
-    min-width: 220px;
+    min-width: 220px; /* Ensure minimum size for smaller screens */
     max-width: 320px;
-    background: #F8E6EC;
+    background: #F8E6EC; /* light pink */
     border-radius: 12px;
     box-shadow: 0 2px 12px rgba(183, 79, 111, 0.10);
     padding: 24px 18px 18px 18px;
-    text-align: center;
+    text-align: center;   /* Center text */
+    display: flex;
+    flex-direction: column;  /* Stack contact info vertically */
+    align-items: center;     /* Center items horizontally */
+    justify-content: center; /* Vertically center content */
 }
 
 @media (max-width: 900px) {
     .contact-columns {
         flex-direction: column;
         gap: 24px;
-        max-width: 600px;
+        max-width: 600px; /* Smaller max-width on smaller screens */
+    }
+
+    .contact-col {
+        width: 100%; /* Make the columns take full width on smaller screens */
     }
 }
 
@@ -305,12 +315,14 @@ video {
     border: 2px solid #B74F6F; /* reddish pink */
     border-radius: 10px;
 }
+
 audio {
   display: block;
   margin: 20px auto; /* top/bottom 20px, left/right auto centers it */
   width: 300px;      /* optional: set player width */
   border-radius: 8px; /* optional: rounded corners */
 }
+
 button {
   display: block;
   margin: 20px auto; /* centers horizontally, with 20px vertical spacing */
@@ -327,6 +339,7 @@ button {
 button:hover {
   background-color: #313B72; /* deep navy */
 }
+
 form {
   display: flex;
   flex-direction: column;
