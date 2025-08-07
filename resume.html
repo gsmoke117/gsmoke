@@ -2,10 +2,18 @@
 <html>
 <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="mainstyle.css">
     <title>Resume</title>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.1/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
+  <script>
+    $(function() {
+      $("#accordion").accordion();
+    });
+  </script>
 </head>
-
 <body>
     <header>Resume</header>
      <nav>
@@ -15,56 +23,72 @@
         <a href="resume.html">Resume</a>
         <a href="contact.html">Contact</a>
     </nav>
+<h1>George Smoke</h1>
+</head>
+<body>
 
-    <h1>George Smoke</h1>
-    <h2 class="section-title">Summary</h2>
-    <p> Dedicated Level II IT Technician with strong expertise in troubleshooting, network infrastructure, and end-user support. 
-        Proven ability to work collaboratively in team environments while managing time effectively to ensure prompt and reliable customer service. 
-        Eager to expand technical skills and contribute to dynamic enterprise environments within the evolving IT landscape.</p>
-    <h2 class="section-title">Experience</h2>
-    <h2>Level II IT Technician</h2>
-    <p>Computer & Data Network Services, May 2024 - Present</p>
-    <ul>
-        <li>Provided comprehensive user support via remote management solutions and in-person troubleshooting for over 15 contracted companies across the
-        Central Alabama area.</li>
-        <li>Performed server installations, configurations, and ongoing management using remote administration tools and in-person troubleshooting, minimizing
-        downtime and ensuring system reliability.</li>
-        <li>Utilized security practices including malware scan and removal, antivirus implementation, practice of least privilege, employee education, and firewall
-         implementation/configuration.</li>
-         <li>Administered Active Directory and Group Policy, handling user account lifecycle tasks such as onboarding, offboarding, password management, and
-        access control.</li>
-        <li> Installed, configured, and maintained office hardware (printers, scanners, desktops, laptops, etc) to ensure consistent operation.</li>
-        <li> Authored and maintained technical documentation and knowledge base articles for faster issue resolution.</li>
-    </ul>
-    <h2 class="section-title">Projects</h2>
-    <h2> Windows Server 2022| Hands-On Virtual Labs</h2>
-    <ul>
-        <li> Installed and configured VirtualBox, Windows Server 2022, and several Windows 11 Pro Virtual Machines.</li>
-        <li> Created and Modified Active Directory template user accounts.</li>
-        <li> Configured Server domain settings, TCP/IP, DNS, and DHCP protocols.</li>
-        <li> Linked Group Policy Objects (GPO) to assigned user accounts and computers.</li>
-    </ul>
-    <h2 class="section-title">Education</h2>
-    <h2> Associates in Computer Information Systems</h2>
-    <p> Wallace Community College Selma • Selma, AL • 2025 • 3.9 GPA</p>
-    <ul>
-        <li>President's List member</li>
-        <li>Dean's list member</li>
-    </ul>
-    <h2 class="section-title">Skills</h2>
-    <ul>
-        <li> Customer Service</li>
-        <li> Ticket Management Systems (Spiceworks, Syncro)</li>
-        <li> Windows Server (2016/2019/2022)</li>
-        <li> Active Directory / Group Policy Management</li>
-        <li> Microsoft Exchange / Office 365 Admin</li>
-        <li> WAN/LAN, DHCP, DNS, VPN, and Wi-Fi Setup and Configuration</li>
-        <li> Modem, Router,  Firewall, and Switch configuration (Meraki and Ubiquiti)</li>
-        <li> Remote Management Tools (Syncro, ScreenConnect/Connectwise)</li>
-        <li> Windows, macOS, Android, IOS, Chrome OS, and Linux</li>
-    </ul>
-    <div class="download-link">
-        <a href="George Smoke Resume.pdf" download>Download PDF Resume</a>
+  <div id="accordion">
+    <!-- Accordion Section 1: Introduction -->
+    <h3>Introduction</h3>
+    <div>
+      <p>Dedicated Level II IT Technician with strong expertise in troubleshooting, network infrastructure, and end-user support. 
+      Proven ability to work collaboratively in team environments while managing time effectively to ensure prompt and reliable customer service. 
+      Eager to expand technical skills and contribute to dynamic enterprise environments within the evolving IT landscape.</p>
     </div>
+
+    <!-- Accordion Section 2: Experience -->
+    <h3>Experience</h3>
+    <div>
+      <h2>Level II IT Technician</h2>
+      <p>Computer & Data Network Services, May 2024 - Present</p>
+      <ul>
+        <li>Provided comprehensive user support via remote management solutions and in-person troubleshooting for over 15 contracted companies across the Central Alabama area.</li>
+        <li>Performed server installations, configurations, and ongoing management using remote administration tools and in-person troubleshooting, minimizing downtime and ensuring system reliability.</li>
+        <li>Utilized security practices including malware scan and removal, antivirus implementation, practice of least privilege, employee education, and firewall implementation/configuration.</li>
+        <li>Administered Active Directory and Group Policy, handling user account lifecycle tasks such as onboarding, offboarding, password management, and access control.</li>
+        <li>Installed, configured, and maintained office hardware (printers, scanners, desktops, laptops, etc) to ensure consistent operation.</li>
+        <li>Authored and maintained technical documentation and knowledge base articles for faster issue resolution.</li>
+      </ul>
+    </div>
+
+    <!-- Accordion Section 3: Projects -->
+    <h3>Projects</h3>
+    <div>
+      <h2>Windows Server 2022 | Hands-On Virtual Labs</h2>
+      <ul>
+        <li>Installed and configured VirtualBox, Windows Server 2022, and several Windows 11 Pro Virtual Machines.</li>
+        <li>Created and Modified Active Directory template user accounts.</li>
+        <li>Configured Server domain settings, TCP/IP, DNS, and DHCP protocols.</li>
+        <li>Linked Group Policy Objects (GPO) to assigned user accounts and computers.</li>
+      </ul>
+    </div>
+
+    <!-- Accordion Section 4: Education -->
+    <h3>Education</h3>
+    <div>
+      <h2>Associates in Computer Information Systems</h2>
+      <p>Wallace Community College Selma • Selma, AL • 2025 • 3.9 GPA</p>
+      <ul>
+        <li>President's List member</li>
+        <li>Dean's List member</li>
+      </ul>
+    </div>
+
+    <!-- Accordion Section 5: Skills -->
+    <h3>Skills</h3>
+    <div>
+      <ul>
+        <li>Customer Service</li>
+        <li>Ticket Management Systems (Spiceworks, Syncro)</li>
+        <li>Windows Server (2016/2019/2022)</li>
+        <li>Active Directory / Group Policy Management</li>
+        <li>Microsoft Exchange / Office 365 Admin</li>
+        <li>WAN/LAN, DHCP, DNS, VPN, and Wi-Fi Setup and Configuration</li>
+        <li>Modem, Router, Firewall, and Switch configuration (Meraki and Ubiquiti)</li>
+        <li>Remote Management Tools (Syncro, ScreenConnect/Connectwise)</li>
+        <li>Windows, macOS, Android, IOS, Chrome OS, and Linux</li>
+      </ul>
+    </div>
+  </div>
 </body>
 </html>

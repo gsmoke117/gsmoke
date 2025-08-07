@@ -327,3 +327,62 @@ button {
 button:hover {
   background-color: #313B72; /* deep navy */
 }
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 30px auto;
+  padding: 20px;
+  max-width: 600px;
+  background-color: #F8E6EC; /* light pink */
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(183, 79, 111, 0.10);
+}
+
+/* jQuery Accordion Styles */
+.accordion {
+    background-color: #E8C1C5; /* pale pink */
+    border-radius: 8px;
+    margin: 20px auto;
+    width: 80%;
+    box-shadow: 0 2px 10px rgba(183, 79, 111, 0.15);
+}
+
+.accordion .accordion-item {
+    border-bottom: 2px solid #B74F6F; /* reddish pink */
+}
+
+.accordion .accordion-header {
+    background-color: #F8E6EC; /* light pink */
+    color: #313B72; /* deep navy */
+    padding: 16px;
+    font-size: 1.2em;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: left;
+    transition: background 0.3s ease;
+}
+
+.accordion .accordion-header:hover {
+    background-color: #B74F6F; /* reddish pink on hover */
+    color: #fff;
+}
+
+.accordion .accordion-content {
+    display: none;
+    padding: 16px;
+    background-color: #F8E6EC; /* light pink */
+    color: #313B72; /* deep navy */
+    border-top: 2px solid #B74F6F; /* reddish pink */
+}
+
+/* Active state styles for accordion */
+.accordion .active .accordion-content {
+    display: block;
+}
+
+.accordion .active .accordion-header {
+    background-color: #B74F6F; /* reddish pink */
+    color: #fff;
+}
